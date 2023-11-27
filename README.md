@@ -28,6 +28,9 @@ spec:
     command: ['sh', '-c', 'while true; do sleep 3600; done']  # Keep the container running
   - name: express-status-app-container
     image: ghcr.io/vikram-katkar-discovery/express-status-app:main
+    env:
+      - name: STATUS_INTERVAL_SECONDS
+      - value: 300
     ports:
     - containerPort: 3000
 ```
