@@ -30,7 +30,7 @@ spec:
     image: ghcr.io/vikram-katkar-discovery/express-status-app:main
     env:
       - name: STATUS_INTERVAL_SECONDS
-      - value: 300
+        value: "300"
     ports:
     - containerPort: 3000
 ```
